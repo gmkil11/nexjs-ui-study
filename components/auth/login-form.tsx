@@ -30,7 +30,7 @@ export const LoginForm = () => {
 
     return (
         <div className="w-full h-screen">
-            <Link href="/" className={buttonVariants({ variant: "ghost", size:"icon"})}>
+            <Link href="/">
                 <IoIosArrowBack className="h-8 w-8 text-white mt-5 ml-2"/>
             </Link>
             <div
