@@ -14,9 +14,9 @@ export const BackButton = ({label, href}: BackButtonProps) => {
         size="sm"
         asChild
         >
-            <Link href={href} className="gap-x-2 text-[#808080]">
+            <Link href={href} className=" text-[#808080]">
                 {label} 
-                <span className="text-[#F4AC47]">회원가입</span>
+                <span className="text-[#F4AC47]">&nbsp;&nbsp;회원가입</span>
             </Link>
         </Button>
     );
