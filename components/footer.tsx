@@ -12,7 +12,9 @@ export const Footer = () => {
     const pathname = usePathname();
 
     const displayFooter = (path:string) => {
-        return pathname.includes(path) ? "hidden" : "fixed bottom-0 flex w-full justify-center items-center gap-x-16 shadow-2xl py-5 bg-white";
+       if(pathname) {
+           return pathname.includes(path) ? "hidden" : "fixed bottom-0 flex w-full justify-center items-center gap-x-16 shadow-2xl py-5 bg-white";
+       }
     }
 
     // 현재 경로에 따라 활성화된 아이콘에 스타일 적용
